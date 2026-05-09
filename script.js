@@ -14,7 +14,7 @@ const products = [
         image: "https://xakimovazizbek.github.io/DEXO-MARKET/telegram_stars.webp",
         oldPrice: "30 479",
         price: "29 209",
-        discount: "4.17",
+        discount: "4.17%",
     },
     {
         name: "tez kunda",
