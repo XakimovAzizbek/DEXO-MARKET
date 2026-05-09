@@ -9,6 +9,14 @@ const products = [
         discount: "20%",
     },
     {
+        name: "Telegram stars (100 ta)",
+        desc: "Telegramning ichki valyutasi.",
+        image: "https://xakimovazizbek.github.io/DEXO-MARKET/telegram_stars.webp",
+        oldPrice: "30 479",
+        price: "29 209",
+        discount: "4.17",
+    },
+    {
         name: "tez kunda",
         desc: "Yangi mahsulot.",
         image: "https://picsum.photos/200/200?random=2",
