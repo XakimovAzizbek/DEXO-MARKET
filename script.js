@@ -38,7 +38,7 @@ products.forEach(p => {
 
 // Telegram lichkaga o'tish funksiyasi
 function order(productName) {
-    const myTelegram = "@Azizbek_on"; // BU YERGA O'Z USERNAME-INGIZNI YOZING (@ siz)
+    const myTelegram = "Azizbek_on"; // BU YERGA O'Z USERNAME-INGIZNI YOZING (@ siz)
     const message = encodeURIComponent(`Assalomu alaykum, men marketdan "${productName}" sotib olmoqchiman.`);
     window.location.href = `https://t.me/${myTelegram}?text=${message}`;
 }
