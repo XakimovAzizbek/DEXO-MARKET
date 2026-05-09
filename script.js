@@ -1,20 +1,20 @@
 // MAHSULOTLAR RO'YXATI - Shu yerdan o'zingiz qo'shasiz
 const products = [
     {
-        name: "Telegram Premium (1 yillik)",
+        name: "Telegram Premium (1 oylik)",
         desc: "Rasmiy obuna, barcha imkoniyatlar ochiladi.",
-        image: "https://picsum.photos/200/200?random=1", // Rasm linki
-        oldPrice: "450 000",
-        price: "390 000",
-        discount: "15%",
+        image: "https://xakimovazizbek.github.io/DEXO-MARKET/telegram_premium.jpeg", // Rasm linki
+        oldPrice: "50 000",
+        price: "45 000",
+        discount: "20%",
     },
     {
-        name: "Tayyor Telegram Akkaunt",
-        desc: "2020-yil ochilgan, spam yo'q, ishonchli.",
+        name: "tez kunda",
+        desc: "Yangi mahsulot.",
         image: "https://picsum.photos/200/200?random=2",
-        oldPrice: "50 000",
-        price: "35 000",
-        discount: "30%",
+        oldPrice: "",
+        price: "",
+        discount: "",
     },
     // YANGI MAHSULOTNI SHU YERDAN QO'SHING
 ];
