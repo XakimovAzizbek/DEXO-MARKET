@@ -80,3 +80,26 @@ function order(productName) {
     const message = encodeURIComponent(`Assalomu alaykum, men marketdan "${productName}" sotib olmoqchiman.`);
     window.location.href = `https://t.me/${myTelegram}?text=${message}`;
 }
+
+// Barcha resurslarni agressiv yuklash funksiyasi
+function aggressivePreload() {
+    products.forEach(p => {
+        const link = p.image;
+        
+        // Agar video bo'lsa
+        if (link.toLowerCase().endsWith('.mp4')) {
+            const v = document.createElement('video');
+            v.src = link;
+            v.preload = 'auto';
+        } 
+        // Agar rasm bo'lsa
+        else {
+            const img = new Image();
+            img.src = link;
+            img.fetchPriority = "high";
+        }
+    });
+}
+
+// Sayt yuklanishi bilan ishga tushadi
+window.addEventListener('load', aggressivePreload);
