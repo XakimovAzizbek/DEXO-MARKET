@@ -3,7 +3,7 @@ const products = [
     {
         name: "Telegram Premium (1 oylik)",
         desc: "Rasmiy obuna, barcha imkoniyatlar ochiladi.",
-        image: "https://xakimovazizbek.github.io/DEXO-MARKET/telegram_premium.jpeg", // Rasm linki
+        image: "https://xakimovazizbek.github.io/DEXO-MARKET/telegram_premium.jpeg",
         oldPrice: "50 000",
         price: "45 000",
         discount: "20%",
@@ -47,22 +47,36 @@ const container = document.getElementById('market-products');
 
 // Mahsulotlarni ekranga chiqarish
 products.forEach(p => {
+    // Fayl kengaytmasini tekshirish (video yoki rasm)
+    const isVideo = p.image.toLowerCase().endsWith('.mp4');
+
     container.innerHTML += `
         <div class="card">
             ${p.discount ? `<div class="discount-badge">-${p.discount}</div>` : ''}
-            <img src="${p.image}" alt="${p.name}">
-            <h3>${p.name}</h3>
-            <p>${p.desc}</p>
-            <span class="old-price">${p.oldPrice} so'm</span>
-            <span class="current-price">${p.price} so'm</span>
-            <button class="buy-btn" onclick="order('${p.name}')">Sotib olish</button>
+            
+            <div class="card-img-wrapper">
+                ${isVideo 
+                    ? `<video src="${p.image}" autoplay loop muted playsinline class="product-media"></video>` 
+                    : `<img src="${p.image}" alt="${p.name}" class="product-media">`
+                }
+            </div>
+
+            <div class="card-body">
+                <h3>${p.name}</h3>
+                <p>${p.desc}</p>
+                <div class="price-row">
+                    ${p.oldPrice ? `<span class="old-price">${p.oldPrice} so'm</span>` : ''}
+                    ${p.price ? `<span class="current-price">${p.price} so'm</span>` : ''}
+                </div>
+                <button class="buy-btn" onclick="order('${p.name}')">Sotib olish</button>
+            </div>
         </div>
     `;
 });
 
 // Telegram lichkaga o'tish funksiyasi
 function order(productName) {
-    const myTelegram = "Azizbek_on"; // BU YERGA O'Z USERNAME-INGIZNI YOZING (@ siz)
+    const myTelegram = "Azizbek_on"; // Sizning username
     const message = encodeURIComponent(`Assalomu alaykum, men marketdan "${productName}" sotib olmoqchiman.`);
     window.location.href = `https://t.me/${myTelegram}?text=${message}`;
 }
