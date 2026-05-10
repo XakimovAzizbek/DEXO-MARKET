@@ -27,6 +27,14 @@ const products = [
     {
         name: "tez kunda",
         desc: "Yangi mahsulot.",
+        image: "https://xakimovazizbek.github.io/DEXO-MARKET/lv_7577647309404507393_20260510145434.mp4",
+        oldPrice: "",
+        price: "",
+        discount: "",
+    },
+    {
+        name: "tez kunda",
+        desc: "Yangi mahsulot.",
         image: "https://picsum.photos/200/200?random=2",
         oldPrice: "",
         price: "",
