@@ -17,6 +17,14 @@ const products = [
         discount: "4.17%",
     },
     {
+        name: "Ton",
+        desc: "Ton hozirgi kurs boyicha olib beriladi (shunchaki sotib olish tugmasini bosing).",
+        image: "https://xakimovazizbek.github.io/DEXO-MARKET/ton.jpg",
+        oldPrice: "",
+        price: "",
+        discount: "",
+    },
+    {
         name: "tez kunda",
         desc: "Yangi mahsulot.",
         image: "https://picsum.photos/200/200?random=2",
