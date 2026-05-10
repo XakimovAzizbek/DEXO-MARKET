@@ -327,3 +327,22 @@ header p::after {
   header { padding: 40px 20px 36px; }
   .container { padding: 16px; gap: 16px; }
 }
+
+/* Video va rasm o'lchamini jilovlash */
+.product-media {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover; /* Bu rasm/videoni joyga moslab, ortiqchasini qirqib beradi */
+  display: block;
+}
+
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  background: var(--surface2);
+  height: 200px; /* Balandlikni o'zingizga yoqqanicha o'zgartirishingiz mumkin */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
