@@ -25,8 +25,8 @@ const products = [
         discount: "",
     },
     {
-        name: "tez kunda",
-        desc: "Yangi mahsulot.",
+        name: "DEXO MARKET",
+        desc: "TEZKOR SAVDOLAR VA XIZMATLARNI TAQDIM ETADI.",
         image: "https://xakimovazizbek.github.io/DEXO-MARKET/lv_7577647309404507393_20260510145434.mp4",
         oldPrice: "",
         price: "",
