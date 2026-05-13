@@ -33,6 +33,14 @@ const products = [
         discount: "",
     },
     {
+        name: "SOTING YOKI SOTIB OLING⚡",
+        desc: "telegram yoki Instagram kanalingiz bormi?        unda bizga murojaat qiling biz uni sotamiz.",
+        image: "https://picsum.photos/200/200?random=2",
+        oldPrice: "",
+        price: "",
+        discount: "",
+    },
+    {
         name: "tez kunda",
         desc: "Yangi mahsulot.",
         image: "https://picsum.photos/200/200?random=2",
