@@ -41,12 +41,12 @@ const products = [
         discount: "",
     },
     {
-        name: "tez kunda",
-        desc: "Yangi mahsulot.",
-        image: "https://picsum.photos/200/200?random=2",
-        oldPrice: "",
-        price: "",
-        discount: "",
+        name: "CAPCUT ULTRA MOD",
+        desc: "Barcha effect animatsiyalar bepul ishlatiladi.",
+        image: "IMG_20261005_201717_622.jpg",
+        oldPrice: "50.000",
+        price: "40.000",
+        discount: "20",
     },
     // YANGI MAHSULOTNI SHU YERDAN QO'SHING
 ];
